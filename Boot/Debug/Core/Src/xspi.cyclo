@@ -1,0 +1,4 @@
+../Core/Src/xspi.c:31:6:MX_XSPI1_Init	3
+../Core/Src/xspi.c:75:6:MX_XSPI2_Init	3
+../Core/Src/xspi.c:122:6:HAL_XSPI_MspInit	9
+../Core/Src/xspi.c:263:6:HAL_XSPI_MspDeInit	5

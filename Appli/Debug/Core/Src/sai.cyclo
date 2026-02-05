@@ -1,0 +1,4 @@
+../Core/Src/sai.c:33:6:MX_SAI1_Init	3
+../Core/Src/sai.c:111:6:MX_SAI2_Init	2
+../Core/Src/sai.c:161:6:HAL_SAI_MspInit	10
+../Core/Src/sai.c:285:6:HAL_SAI_MspDeInit	7

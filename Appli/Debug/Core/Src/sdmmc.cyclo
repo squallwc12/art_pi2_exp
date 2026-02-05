@@ -1,0 +1,6 @@
+../Core/Src/sdmmc.c:32:6:MX_SDMMC1_SD_Init	2
+../Core/Src/sdmmc.c:59:6:MX_SDMMC2_MMC_Init	2
+../Core/Src/sdmmc.c:85:6:HAL_SD_MspInit	3
+../Core/Src/sdmmc.c:145:6:HAL_MMC_MspInit	3
+../Core/Src/sdmmc.c:214:6:HAL_SD_MspDeInit	2
+../Core/Src/sdmmc.c:244:6:HAL_MMC_MspDeInit	2
