@@ -66,8 +66,8 @@ all: main-build
 main-build: art_pi2_exp_Boot.elf secondary-outputs
 
 # Tool invocations
-art_pi2_exp_Boot.elf art_pi2_exp_Boot.map: $(OBJS) $(USER_OBJS) D:\Github_cpy\art_pi2_exp\Boot\STM32H7R7L8HXH_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "art_pi2_exp_Boot.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Github_cpy\art_pi2_exp\Boot\STM32H7R7L8HXH_FLASH.ld" --specs=nosys.specs -Wl,-Map="art_pi2_exp_Boot.map" -Wl,--gc-sections -static  -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+art_pi2_exp_Boot.elf art_pi2_exp_Boot.map: $(OBJS) $(USER_OBJS) D:\GitHub\art_pi2_exp\Boot\STM32H7R7L8HXH_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "art_pi2_exp_Boot.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\GitHub\art_pi2_exp\Boot\STM32H7R7L8HXH_FLASH.ld" --specs=nosys.specs -Wl,-Map="art_pi2_exp_Boot.map" -Wl,--gc-sections -static  -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

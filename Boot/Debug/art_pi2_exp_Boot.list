@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00037d7a  00000000  00000000  0003aac1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00023099  00000000  00000000  0007283b  2**0
+ 17 .debug_line   0002305d  00000000  00000000  0007283b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    001538c2  00000000  00000000  000958d4  2**0
+ 18 .debug_str    001538a7  00000000  00000000  00095898  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  001e9196  2**0
+ 19 .comment      00000043  00000000  00000000  001e913f  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00007ca4  00000000  00000000  001e91dc  2**2
+ 20 .debug_frame  00007ca4  00000000  00000000  001e9184  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000004e  00000000  00000000  001f0e80  2**0
+ 21 .debug_line_str 0000004e  00000000  00000000  001f0e28  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -26295,6 +26295,11 @@ int app_boot_jump_to(uint32_t DestAddress)
  800a2a4:	f3bf 8f6f 	isb	sy
 }
  800a2a8:	bf00      	nop
+__STATIC_FORCEINLINE void SCB_DisableICache (void)
+{
+  #if defined (__ICACHE_PRESENT) && (__ICACHE_PRESENT == 1U)
+    __DSB();
+    __ISB();
     SCB->CCR &= ~(uint32_t)SCB_CCR_IC_Msk;  /* disable I-Cache */
  800a2aa:	4a3e      	ldr	r2, [pc, #248]	@ (800a3a4 <app_boot_jump_to+0x120>)
  800a2ac:	6952      	ldr	r2, [r2, #20]
@@ -26313,6 +26318,9 @@ int app_boot_jump_to(uint32_t DestAddress)
  800a2c4:	f3bf 8f6f 	isb	sy
 }
  800a2c8:	bf00      	nop
+    __DSB();
+    __ISB();
+  #endif
 }
  800a2ca:	bf00      	nop
     #if ((defined(__GNUC__) || defined(__clang__)) && !defined(__OPTIMIZE__))
