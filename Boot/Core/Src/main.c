@@ -109,7 +109,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   std_cio_init();
 
-  //clock_information();
+  clock_information();
 
   bsp_flash_OB_init();
   bsp_xspi_memory_init();

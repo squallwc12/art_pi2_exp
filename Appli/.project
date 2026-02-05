@@ -36,7 +36,7 @@
 		<link>
 			<name>User</name>
 			<type>2</type>
-			<location>D:/Github_cpy/art_pi2_exp/User</location>
+			<location>D:/GitHub/art_pi2_exp/User</location>
 		</link>
 		<link>
 			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_hal.c</name>
@@ -144,6 +144,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_sai_ex.c</locationURI>
 		</link>
 		<link>
+			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_hal_sd.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_sd.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_hal_sd_ex.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_sd_ex.c</locationURI>
+		</link>
+		<link>
 			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_hal_smbus.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_smbus.c</locationURI>
@@ -172,6 +182,16 @@
 			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_hal_uart_ex.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_uart_ex.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_ll_dlyb.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_ll_dlyb.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_ll_sdmmc.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_ll_sdmmc.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_ll_usb.c</name>

@@ -29,6 +29,6 @@ User/bsp/src \
 User/bsp_components/aps256xx \
 User/bsp_components/w35t51nwtbie \
 User/std/src \
-User/third_party/perf_cpunter \
+User/third_party/perf_counter \
 applications/boot/src \
 

@@ -34,7 +34,7 @@
 		<link>
 			<name>User</name>
 			<type>2</type>
-			<location>D:/Github_cpy/art_pi2_exp/User</location>
+			<location>D:/GitHub/art_pi2_exp/User</location>
 		</link>
 		<link>
 			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_hal.c</name>

@@ -23,6 +23,7 @@
 #include "i2c.h"
 #include "ltdc.h"
 #include "sbs.h"
+#include "sdmmc.h"
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
@@ -31,6 +32,8 @@
 /* USER CODE BEGIN Includes */
 #include "std_cio.h"
 #include "perf_counter.h"
+#include "./example/perf_counter_example_r7.h"
+#include "sd_card.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -117,41 +120,15 @@ int main(void)
   MX_UART7_Init();
   MX_USART1_UART_Init();
   MX_SBS_Init();
+  MX_SDMMC1_SD_Init();
   /* USER CODE BEGIN 2 */
   std_cio_init();
 
+  //sd_card_erase_t();
+  //sd_card_single_block_t();
+
   perfc_init(true);
-
-  int32_t iCycleResult = 0;
-
-  /*! demo of using() block */
-  using(int a = 0,printf("========= On Enter =======\r\n"),
-                  printf("========= On Leave =======\r\n")) {
-      __perf_counter_printf__("\t In Body a=%d \r\n", ++a);
-  }
-
-  __cycleof__("Calibration") {}
-
-  __perf_counter_printf__("\r\n\r\n\r\n\r\n");
-
-  /* measure cycles and store it in a dedicated variable without printf */
-  __cycleof__("delay_us(1000ul)",
-      /* insert code to __cycleof__ body, "{}" can be omitted  */
-      {
-          iCycleResult = __cycle_count__;   /*< "__cycle_count__" stores the result */
-      }) {
-      perfc_delay_us(1000ul);
-  }
-
-  perfc_delay_ms(500);
-
-  __perf_counter_printf__("\r\n delay_us(1000ul) takes %"PRIi32" cycles\r\n", (int32_t)iCycleResult);
-
-  __perf_counter_printf__("Long Delay Test Start...Please wait for 10s...\r\n");
-  //__IRQ_SAFE {
-      perfc_delay_ms(10000);
-  //}
-  __perf_counter_printf__("Long Delay Test End...\r\n");
+  perf_counter_example_r7();
 
   /* USER CODE END 2 */
 

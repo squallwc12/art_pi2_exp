@@ -9,7 +9,9 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include User/third_party/perf_cpunter/subdir.mk
+-include applications/components/drivers/sd_card/src/subdir.mk
+-include User/third_party/perf_counter/example/subdir.mk
+-include User/third_party/perf_counter/subdir.mk
 -include User/std/src/subdir.mk
 -include User/bsp_components/w35t51nwtbie/subdir.mk
 -include User/bsp_components/aps256xx/subdir.mk
@@ -65,8 +67,8 @@ all: main-build
 main-build: art_pi2_exp_Appli.elf secondary-outputs
 
 # Tool invocations
-art_pi2_exp_Appli.elf art_pi2_exp_Appli.map: $(OBJS) $(USER_OBJS) D:\Github_cpy\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "art_pi2_exp_Appli.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Github_cpy\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld" --specs=nosys.specs -Wl,-Map="art_pi2_exp_Appli.map" -Wl,--gc-sections -static  -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+art_pi2_exp_Appli.elf art_pi2_exp_Appli.map: $(OBJS) $(USER_OBJS) D:\GitHub\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "art_pi2_exp_Appli.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\GitHub\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld" --specs=nosys.specs -Wl,-Map="art_pi2_exp_Appli.map" -Wl,--gc-sections -static  -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
