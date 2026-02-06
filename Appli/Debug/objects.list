@@ -54,6 +54,7 @@
 "./User/bsp_components/aps256xx/aps256xx.o"
 "./User/bsp_components/w35t51nwtbie/w35t51nwtbie.o"
 "./User/std/src/std_cio.o"
+"./User/std/src/std_heap_stack.o"
 "./User/std/src/std_time.o"
 "./User/third_party/perf_counter/example/perf_counter_example_r7.o"
 "./User/third_party/perf_counter/perf_counter.o"

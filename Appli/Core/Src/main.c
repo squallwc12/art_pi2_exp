@@ -31,6 +31,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "std_cio.h"
+#include "std_heap_stack.h"
 #include "perf_counter.h"
 #include "./example/perf_counter_example_r7.h"
 #include "sd_card.h"
@@ -126,6 +127,8 @@ int main(void)
 
   //sd_card_erase_t();
   //sd_card_single_block_t();
+
+  std_heap_stack_info();
 
   perfc_init(true);
   perf_counter_example_r7();

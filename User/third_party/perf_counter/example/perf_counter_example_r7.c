@@ -54,10 +54,6 @@ static example_lv0_t s_tItem[8] = {
     {.chID = 7},
 };
 
-extern uint32_t _estack;
-extern uint32_t _Min_Heap_Size;
-extern uint32_t _Min_Stack_Size;
-
 /* Private function prototypes -----------------------------------------------*/
 
 /* Private user code ---------------------------------------------------------*/
@@ -210,11 +206,6 @@ void perf_counter_example_r7(void)
         __perf_counter_printf__("\r[%010"PRIi64"]\r\n", get_system_ticks());
     }
     */
-
-    __perf_counter_printf__("_estack: 0x%08x\r\n", (uint32_t)&_estack);
-    __perf_counter_printf__("_Min_Heap_Size: 0x%08x\r\n", (uint32_t)&_Min_Heap_Size);
-    __perf_counter_printf__("_Min_Stack_Size: 0x%08x\r\n", (uint32_t)&_Min_Stack_Size);
-
 
 
     __perf_counter_printf__("Performance Counter Example for R7 End.\r\n");

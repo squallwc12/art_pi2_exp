@@ -35,17 +35,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_rnglists 00001409  00000000  00000000  000396b8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00037d7a  00000000  00000000  0003aac1  2**0
+ 16 .debug_macro  000375d9  00000000  00000000  0003aac1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0002303e  00000000  00000000  0007283b  2**0
+ 17 .debug_line   0002303e  00000000  00000000  0007209a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00153862  00000000  00000000  00095879  2**0
+ 18 .debug_str    00153858  00000000  00000000  000950d8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  001e90db  2**0
+ 19 .comment      00000043  00000000  00000000  001e8930  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00007ca4  00000000  00000000  001e9120  2**2
+ 20 .debug_frame  00007ca4  00000000  00000000  001e8974  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000004a  00000000  00000000  001f0dc4  2**0
+ 21 .debug_line_str 0000004a  00000000  00000000  001f0618  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -18819,7 +18819,7 @@ HAL_StatusTypeDef UART_SetConfig(UART_HandleTypeDef *huart)
  8007722:	e0ad      	b.n	8007880 <UART_SetConfig+0x6f0>
  8007724:	03d09000 	.word	0x03d09000
  8007728:	003d0900 	.word	0x003d0900
- 800772c:	0800f0e0 	.word	0x0800f0e0
+ 800772c:	0800f0dc 	.word	0x0800f0dc
  8007730:	58024400 	.word	0x58024400
       }
     }
@@ -19027,7 +19027,7 @@ HAL_StatusTypeDef UART_SetConfig(UART_HandleTypeDef *huart)
  80078ac:	58024400 	.word	0x58024400
  80078b0:	03d09000 	.word	0x03d09000
  80078b4:	003d0900 	.word	0x003d0900
- 80078b8:	0800f0e0 	.word	0x0800f0e0
+ 80078b8:	0800f0dc 	.word	0x0800f0dc
 
 080078bc <UART_AdvFeatureConfig>:
   * @brief Configure the UART peripheral advanced features.
@@ -20124,8 +20124,8 @@ static void UARTEx_SetNbDataToProcess(UART_HandleTypeDef *huart)
  8007ef4:	f85d 7b04 	ldr.w	r7, [sp], #4
  8007ef8:	4770      	bx	lr
  8007efa:	bf00      	nop
- 8007efc:	0800f0f8 	.word	0x0800f0f8
- 8007f00:	0800f100 	.word	0x0800f100
+ 8007efc:	0800f0f4 	.word	0x0800f0f4
+ 8007f00:	0800f0fc 	.word	0x0800f0fc
 
 08007f04 <HAL_XSPI_Init>:
   *         in the XSPI_InitTypeDef and initialize the associated handle.
@@ -23057,7 +23057,7 @@ void bsp_flash_OB_init(void)
  8008f06:	46bd      	mov	sp, r7
  8008f08:	bd80      	pop	{r7, pc}
  8008f0a:	bf00      	nop
- 8008f0c:	0800f108 	.word	0x0800f108
+ 8008f0c:	0800f104 	.word	0x0800f104
  8008f10:	000603d0 	.word	0x000603d0
 
 08008f14 <bsp_xspi1_init>:
@@ -23196,7 +23196,7 @@ static void bsp_xspi1_init(void) // PSRAM
  8008fec:	24000830 	.word	0x24000830
  8008ff0:	52005000 	.word	0x52005000
  8008ff4:	431bde83 	.word	0x431bde83
- 8008ff8:	0800f11c 	.word	0x0800f11c
+ 8008ff8:	0800f118 	.word	0x0800f118
 
 08008ffc <bsp_xspi2_init>:
  * @brief XSPI2 Initialization Function
@@ -23321,7 +23321,7 @@ static void bsp_xspi2_init(void) // Octal Flash
  80090b2:	bf00      	nop
  80090b4:	24000890 	.word	0x24000890
  80090b8:	5200a000 	.word	0x5200a000
- 80090bc:	0800f12c 	.word	0x0800f12c
+ 80090bc:	0800f128 	.word	0x0800f128
 
 080090c0 <bsp_xspi_memory_init>:
   * @brief  Initialize XSPI memories
@@ -26962,7 +26962,7 @@ int app_boot_jump_to(uint32_t DestAddress)
  800a7e6:	250a      	movs	r5, #10
  800a7e8:	e7ea      	b.n	800a7c0 <_puts_r+0x64>
  800a7ea:	bf00      	nop
- 800a7ec:	0800f282 	.word	0x0800f282
+ 800a7ec:	0800f27e 	.word	0x0800f27e
 
 0800a7f0 <puts>:
  800a7f0:	4b02      	ldr	r3, [pc, #8]	@ (800a7fc <puts+0xc>)
@@ -28137,7 +28137,7 @@ int app_boot_jump_to(uint32_t DestAddress)
  800b3ac:	e7a5      	b.n	800b2fa <_vfprintf_r+0x2a2>
  800b3ae:	bf00      	nop
 	...
- 800b3b8:	0800f14b 	.word	0x0800f14b
+ 800b3b8:	0800f147 	.word	0x0800f147
  800b3bc:	9b08      	ldr	r3, [sp, #32]
  800b3be:	781b      	ldrb	r3, [r3, #0]
  800b3c0:	2b6c      	cmp	r3, #108	@ 0x6c
@@ -28346,12 +28346,12 @@ int app_boot_jump_to(uint32_t DestAddress)
  800b5ee:	bf00      	nop
  800b5f0:	ffffffff 	.word	0xffffffff
  800b5f4:	7fefffff 	.word	0x7fefffff
- 800b5f8:	0800f13f 	.word	0x0800f13f
- 800b5fc:	0800f13b 	.word	0x0800f13b
- 800b600:	0800f147 	.word	0x0800f147
- 800b604:	0800f143 	.word	0x0800f143
- 800b608:	0800f15c 	.word	0x0800f15c
- 800b60c:	0800f14b 	.word	0x0800f14b
+ 800b5f8:	0800f13b 	.word	0x0800f13b
+ 800b5fc:	0800f137 	.word	0x0800f137
+ 800b600:	0800f143 	.word	0x0800f143
+ 800b604:	0800f13f 	.word	0x0800f13f
+ 800b608:	0800f158 	.word	0x0800f158
+ 800b60c:	0800f147 	.word	0x0800f147
  800b610:	eeb6 7b00 	vmov.f64	d7, #96	@ 0x3f000000  0.5
  800b614:	eeb4 0bc7 	vcmpe.f64	d0, d7
  800b618:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
@@ -28743,8 +28743,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800b9ea:	463e      	mov	r6, r7
  800b9ec:	e7a4      	b.n	800b938 <_vfprintf_r+0x8e0>
  800b9ee:	bf00      	nop
- 800b9f0:	0800f294 	.word	0x0800f294
- 800b9f4:	0800f284 	.word	0x0800f284
+ 800b9f0:	0800f290 	.word	0x0800f290
+ 800b9f4:	0800f280 	.word	0x0800f280
  800b9f8:	2366      	movs	r3, #102	@ 0x66
  800b9fa:	9304      	str	r3, [sp, #16]
  800b9fc:	2601      	movs	r6, #1
@@ -29097,8 +29097,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800bd66:	e55a      	b.n	800b81e <_vfprintf_r+0x7c6>
  800bd68:	460c      	mov	r4, r1
  800bd6a:	e575      	b.n	800b858 <_vfprintf_r+0x800>
- 800bd6c:	0800f14b 	.word	0x0800f14b
- 800bd70:	0800f15c 	.word	0x0800f15c
+ 800bd6c:	0800f147 	.word	0x0800f147
+ 800bd70:	0800f158 	.word	0x0800f158
  800bd74:	9a04      	ldr	r2, [sp, #16]
  800bd76:	2a65      	cmp	r2, #101	@ 0x65
  800bd78:	f340 823e 	ble.w	800c1f8 <_vfprintf_r+0x11a0>
@@ -29297,8 +29297,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800bf4a:	3e10      	subs	r6, #16
  800bf4c:	461a      	mov	r2, r3
  800bf4e:	e7b0      	b.n	800beb2 <_vfprintf_r+0xe5a>
- 800bf50:	0800f16d 	.word	0x0800f16d
- 800bf54:	0800f284 	.word	0x0800f284
+ 800bf50:	0800f169 	.word	0x0800f169
+ 800bf54:	0800f280 	.word	0x0800f280
  800bf58:	9a03      	ldr	r2, [sp, #12]
  800bf5a:	42ba      	cmp	r2, r7
  800bf5c:	bfa8      	it	ge
@@ -29576,7 +29576,7 @@ int app_boot_jump_to(uint32_t DestAddress)
  800c1ec:	f040 80af 	bne.w	800c34e <_vfprintf_r+0x12f6>
  800c1f0:	ac21      	add	r4, sp, #132	@ 0x84
  800c1f2:	e722      	b.n	800c03a <_vfprintf_r+0xfe2>
- 800c1f4:	0800f284 	.word	0x0800f284
+ 800c1f4:	0800f280 	.word	0x0800f280
  800c1f8:	9803      	ldr	r0, [sp, #12]
  800c1fa:	991f      	ldr	r1, [sp, #124]	@ 0x7c
  800c1fc:	2801      	cmp	r0, #1
@@ -29788,8 +29788,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800c40a:	f8cd 9018 	str.w	r9, [sp, #24]
  800c40e:	464f      	mov	r7, r9
  800c410:	f7ff b983 	b.w	800b71a <_vfprintf_r+0x6c2>
- 800c414:	0800f284 	.word	0x0800f284
- 800c418:	0800f294 	.word	0x0800f294
+ 800c414:	0800f280 	.word	0x0800f280
+ 800c418:	0800f290 	.word	0x0800f290
 
 0800c41c <__sbprintf>:
  800c41c:	b5f0      	push	{r4, r5, r6, r7, lr}
@@ -30812,12 +30812,12 @@ int app_boot_jump_to(uint32_t DestAddress)
  800ce00:	509f79fb 	.word	0x509f79fb
  800ce04:	3fd34413 	.word	0x3fd34413
  800ce08:	7ff00000 	.word	0x7ff00000
- 800ce0c:	0800f178 	.word	0x0800f178
- 800ce10:	0800f16e 	.word	0x0800f16e
- 800ce14:	0800f16d 	.word	0x0800f16d
+ 800ce0c:	0800f174 	.word	0x0800f174
+ 800ce10:	0800f16a 	.word	0x0800f16a
+ 800ce14:	0800f169 	.word	0x0800f169
  800ce18:	0800f2d8 	.word	0x0800f2d8
- 800ce1c:	0800f17c 	.word	0x0800f17c
- 800ce20:	0800f18d 	.word	0x0800f18d
+ 800ce1c:	0800f178 	.word	0x0800f178
+ 800ce20:	0800f189 	.word	0x0800f189
  800ce24:	f1ba 0f0e 	cmp.w	sl, #14
  800ce28:	f8c9 0038 	str.w	r0, [r9, #56]	@ 0x38
  800ce2c:	d86e      	bhi.n	800cf0c <_dtoa_r+0x38c>
@@ -31575,8 +31575,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800d5fa:	9001      	str	r0, [sp, #4]
  800d5fc:	e7ec      	b.n	800d5d8 <_dtoa_r+0xa58>
  800d5fe:	bf00      	nop
- 800d600:	0800f17c 	.word	0x0800f17c
- 800d604:	0800f16f 	.word	0x0800f16f
+ 800d600:	0800f178 	.word	0x0800f178
+ 800d604:	0800f16b 	.word	0x0800f16b
 
 0800d608 <_Balloc>:
  800d608:	6c43      	ldr	r3, [r0, #68]	@ 0x44
@@ -31671,8 +31671,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800d6e0:	6125      	str	r5, [r4, #16]
  800d6e2:	4620      	mov	r0, r4
  800d6e4:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 800d6e8:	0800f17c 	.word	0x0800f17c
- 800d6ec:	0800f1e5 	.word	0x0800f1e5
+ 800d6e8:	0800f178 	.word	0x0800f178
+ 800d6ec:	0800f1e1 	.word	0x0800f1e1
 
 0800d6f0 <__hi0bits>:
  800d6f0:	f5b0 3f80 	cmp.w	r0, #65536	@ 0x10000
@@ -31762,8 +31762,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800d7a6:	6103      	str	r3, [r0, #16]
  800d7a8:	bd10      	pop	{r4, pc}
  800d7aa:	bf00      	nop
- 800d7ac:	0800f17c 	.word	0x0800f17c
- 800d7b0:	0800f1e5 	.word	0x0800f1e5
+ 800d7ac:	0800f178 	.word	0x0800f178
+ 800d7b0:	0800f1e1 	.word	0x0800f1e1
 
 0800d7b4 <__multiply>:
  800d7b4:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -31882,8 +31882,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800d8ea:	e79f      	b.n	800d82c <__multiply+0x78>
  800d8ec:	3e01      	subs	r6, #1
  800d8ee:	e7a1      	b.n	800d834 <__multiply+0x80>
- 800d8f0:	0800f17c 	.word	0x0800f17c
- 800d8f4:	0800f1e5 	.word	0x0800f1e5
+ 800d8f0:	0800f178 	.word	0x0800f178
+ 800d8f4:	0800f1e1 	.word	0x0800f1e1
 
 0800d8f8 <__pow5mult>:
  800d8f8:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
@@ -31936,7 +31936,7 @@ int app_boot_jump_to(uint32_t DestAddress)
  800d96c:	4630      	mov	r0, r6
  800d96e:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
  800d972:	bf00      	nop
- 800d974:	0800f2a4 	.word	0x0800f2a4
+ 800d974:	0800f2a0 	.word	0x0800f2a0
 
 0800d978 <__lshift>:
  800d978:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
@@ -32015,8 +32015,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800da42:	d8f9      	bhi.n	800da38 <__lshift+0xc0>
  800da44:	e7ea      	b.n	800da1c <__lshift+0xa4>
  800da46:	bf00      	nop
- 800da48:	0800f17c 	.word	0x0800f17c
- 800da4c:	0800f1e5 	.word	0x0800f1e5
+ 800da48:	0800f178 	.word	0x0800f178
+ 800da4c:	0800f1e1 	.word	0x0800f1e1
 
 0800da50 <__mcmp>:
  800da50:	690a      	ldr	r2, [r1, #16]
@@ -32152,8 +32152,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800dba2:	3f01      	subs	r7, #1
  800dba4:	e7e7      	b.n	800db76 <__mdiff+0xee>
  800dba6:	bf00      	nop
- 800dba8:	0800f17c 	.word	0x0800f17c
- 800dbac:	0800f1e5 	.word	0x0800f1e5
+ 800dba8:	0800f178 	.word	0x0800f178
+ 800dbac:	0800f1e1 	.word	0x0800f1e1
 
 0800dbb0 <__d2b>:
  800dbb0:	e92d 43f7 	stmdb	sp!, {r0, r1, r2, r4, r5, r6, r7, r8, r9, lr}
@@ -32219,8 +32219,8 @@ int app_boot_jump_to(uint32_t DestAddress)
  800dc4e:	f7ff fd4f 	bl	800d6f0 <__hi0bits>
  800dc52:	ebc0 1042 	rsb	r0, r0, r2, lsl #5
  800dc56:	e7e5      	b.n	800dc24 <__d2b+0x74>
- 800dc58:	0800f17c 	.word	0x0800f17c
- 800dc5c:	0800f1e5 	.word	0x0800f1e5
+ 800dc58:	0800f178 	.word	0x0800f178
+ 800dc5c:	0800f1e1 	.word	0x0800f1e1
 
 0800dc60 <_realloc_r>:
  800dc60:	e92d 4ff7 	stmdb	sp!, {r0, r1, r2, r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -32697,9 +32697,9 @@ int app_boot_jump_to(uint32_t DestAddress)
  800e0e4:	e7f3      	b.n	800e0ce <__assert_func+0x12>
  800e0e6:	bf00      	nop
  800e0e8:	24000028 	.word	0x24000028
- 800e0ec:	0800f248 	.word	0x0800f248
- 800e0f0:	0800f255 	.word	0x0800f255
- 800e0f4:	0800f283 	.word	0x0800f283
+ 800e0ec:	0800f244 	.word	0x0800f244
+ 800e0f0:	0800f251 	.word	0x0800f251
+ 800e0f4:	0800f27f 	.word	0x0800f27f
 
 0800e0f8 <_calloc_r>:
  800e0f8:	b538      	push	{r3, r4, r5, lr}
@@ -33191,7 +33191,7 @@ int app_boot_jump_to(uint32_t DestAddress)
  800e610:	f04a 0a02 	orr.w	sl, sl, #2
  800e614:	2302      	movs	r3, #2
  800e616:	e7c9      	b.n	800e5ac <_vfiprintf_r+0x3e8>
- 800e618:	0800f14b 	.word	0x0800f14b
+ 800e618:	0800f147 	.word	0x0800f147
  800e61c:	9b01      	ldr	r3, [sp, #4]
  800e61e:	46a8      	mov	r8, r5
  800e620:	2500      	movs	r5, #0
@@ -33492,7 +33492,7 @@ int app_boot_jump_to(uint32_t DestAddress)
  800e91e:	e5e3      	b.n	800e4e8 <_vfiprintf_r+0x324>
  800e920:	0800f4b1 	.word	0x0800f4b1
  800e924:	0800f4a1 	.word	0x0800f4a1
- 800e928:	0800f15c 	.word	0x0800f15c
+ 800e928:	0800f158 	.word	0x0800f158
  800e92c:	2110      	movs	r1, #16
  800e92e:	6071      	str	r1, [r6, #4]
  800e930:	2a07      	cmp	r2, #7
