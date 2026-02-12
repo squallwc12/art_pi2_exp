@@ -1,11 +1,13 @@
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    bsp_xspi.h
-  * @brief   broad support package for xspi memory
+  * @file    tim.h
+  * @brief   This file contains all the function prototypes for
+  *          the tim.c file
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2025 Jousing.
+  * Copyright (c) 2026 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -14,39 +16,37 @@
   *
   ******************************************************************************
   */
+/* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __BSP_XSPI_H
-#define __BSP_XSPI_H
-
-#ifdef USER_BOOT
+#ifndef __TIM_H__
+#define __TIM_H__
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
+#include "main.h"
 
-/* Define --------------------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
 
-/* Function prototypes -------------------------------------------------------*/
-// Initialize XSPI memories
-void bsp_xspi_memory_init(void);
-// Flash memory
-void bsp_xspi_memory_mapped(void);
+/* USER CODE END Includes */
 
-/* Macros --------------------------------------------------------------------*/
-/** @defgroup bsp_flash_macro BSP Flash Macro
-  * @{
-  */
+extern TIM_HandleTypeDef htim1;
 
-/**
-  * @}
-  */
+/* USER CODE BEGIN Private defines */
+
+/* USER CODE END Private defines */
+
+void MX_TIM1_Init(void);
+
+/* USER CODE BEGIN Prototypes */
+
+/* USER CODE END Prototypes */
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* USER_BOOT */
+#endif /* __TIM_H__ */
 
-#endif /* __BSP_XSPI_H */

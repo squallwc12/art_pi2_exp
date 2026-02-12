@@ -1,8 +1,8 @@
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:49:13:bsp_xspi1_init	3
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:86:13:bsp_xspi2_init	3
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:122:6:bsp_xspi_memory_init	1
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:135:20:bsp_extmem_flash_probe	5
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:191:20:bsp_extmem_flash_enter_xip	2
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:211:20:bsp_extmem_psram_probe	9
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:282:20:bsp_extmem_psram_enter_xip	2
-D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:305:6:bsp_xspi_memory_mapped	1
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:50:13:bsp_xspi1_init	3
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:87:13:bsp_xspi2_init	3
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:123:6:bsp_xspi_memory_init	1
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:136:20:bsp_extmem_flash_probe	5
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:192:20:bsp_extmem_flash_enter_xip	2
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:212:20:bsp_extmem_psram_probe	9
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:283:20:bsp_extmem_psram_enter_xip	2
+D:/GitHub/art_pi2_exp/User/bsp/src/bsp_xspi.c:306:6:bsp_xspi_memory_mapped	1

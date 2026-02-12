@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
-  * @file    std_exception.h
-  * @brief   This file contains all the function prototypes for
+  * @file    bsp_timer.h
+  * @brief   This file contains all the function prototypes for the BSP timer
   ******************************************************************************
   * @attention
   *
@@ -15,47 +15,47 @@
   ******************************************************************************
   */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __STD_HEAP_STACK_H
-#define __STD_HEAP_STACK_H
+#ifndef __BSP_TIMER_H
+#define __BSP_TIMER_H
+
+#ifdef USER_APPLI
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include <stdbool.h>
-#include <stdint.h>
-#include <stddef.h>
-#include <inttypes.h>
 
 /* Private includes ----------------------------------------------------------*/
 
 /* Exported types ------------------------------------------------------------*/
-//
-typedef struct {
-    uintptr_t heap_start;   // Start address of the heap
-    uintptr_t heap_end;     // End address of the heap
-    uintptr_t stack_start;  // Start address of the stack
-    uintptr_t stack_end;    // End address of the stack
-
-    size_t    heap_size;    // Size of the heap in bytes
-    size_t    stack_size;   // Size of the stack in bytes
-} std_heap_stack_info_t;
 
 /* Exported constants --------------------------------------------------------*/
 
 /* Exported macro ------------------------------------------------------------*/
 
 /* Exported functions prototypes ---------------------------------------------*/
-void std_heap_stack_get_info(std_heap_stack_info_t *pInfo);
-void std_heap_stack_info(void);
+void bsp_timer_start_tim1(void);
+void bsp_timer_config_cycle_ms_tim1(uint32_t period_ms);
 
 /* Private defines -----------------------------------------------------------*/
+/*
+ * Macros to select the timer instance for periodic cycle configuration and start.
+ * Here, we use TIM1 as an example. You can change TIM1 to any other timer instance
+ * as needed by defining corresponding functions.
+ */
+#define bsp_timer_start(X)		bsp_timer_start_tim##X()
 
-#ifdef __cplusplus
-}
-#endif
-#endif /*__STD_HEAP_STACK_H*/
+/*
+ * Macro to configure the timer for periodic cycle in milliseconds.
+ * X: Timer instance number (e.g., 1 for TIM1)
+ * Y: Period in milliseconds
+ */
+#define bsp_timer_config_cycle_ms(X,Y)	bsp_timer_config_cycle_ms_tim##X(Y)
+
+#endif	/* USER_APPLI */
+
+#endif /*__BSP_TIMER_H */
 
 
 

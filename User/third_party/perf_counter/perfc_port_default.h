@@ -25,6 +25,8 @@
 
 #include "cmsis_compiler.h"
 
+#define __PERFC_STACK_CHECK_IN_ISR__
+
 /*============================ MACROS ========================================*/
 /*============================ MACROFIED FUNCTIONS ===========================*/
 

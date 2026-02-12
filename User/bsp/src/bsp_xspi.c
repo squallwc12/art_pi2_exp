@@ -14,10 +14,11 @@
   *
   ******************************************************************************
   */
+#ifdef USER_BOOT
 /* Includes ------------------------------------------------------------------*/
 
 /* Private includes ----------------------------------------------------------*/
-#ifdef USER_BOOT
+
 #include "xspi.h"
 #include "std_cio.h"
 #include "bsp_exception.h"
@@ -310,5 +311,5 @@ void bsp_xspi_memory_mapped(void)
     bsp_extmem_psram_enter_xip();
 }
 
-#endif
+#endif	/* USER_BOOT */
 

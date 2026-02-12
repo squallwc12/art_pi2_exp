@@ -35,17 +35,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_rnglists 00001409  00000000  00000000  000396b8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000375d9  00000000  00000000  0003aac1  2**0
+ 16 .debug_macro  000375c3  00000000  00000000  0003aac1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0002303e  00000000  00000000  0007209a  2**0
+ 17 .debug_line   0002303e  00000000  00000000  00072084  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00153858  00000000  00000000  000950d8  2**0
+ 18 .debug_str    00153858  00000000  00000000  000950c2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  001e8930  2**0
+ 19 .comment      00000043  00000000  00000000  001e891a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00007ca4  00000000  00000000  001e8974  2**2
+ 20 .debug_frame  00007ca4  00000000  00000000  001e8960  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000004a  00000000  00000000  001f0618  2**0
+ 21 .debug_line_str 0000004a  00000000  00000000  001f0604  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -23163,7 +23163,7 @@ static void bsp_xspi1_init(void) // PSRAM
  8008fb2:	d004      	beq.n	8008fbe <bsp_xspi1_init+0xaa>
         BSP_EXCEP_HANDLER();
  8008fb4:	2200      	movs	r2, #0
- 8008fb6:	2148      	movs	r1, #72	@ 0x48
+ 8008fb6:	2149      	movs	r1, #73	@ 0x49
  8008fb8:	480f      	ldr	r0, [pc, #60]	@ (8008ff8 <bsp_xspi1_init+0xe4>)
  8008fba:	f7ff ff4f 	bl	8008e5c <bsp_exception_handler>
     }
@@ -23184,7 +23184,7 @@ static void bsp_xspi1_init(void) // PSRAM
  8008fd8:	d004      	beq.n	8008fe4 <bsp_xspi1_init+0xd0>
         BSP_EXCEP_HANDLER();
  8008fda:	2200      	movs	r2, #0
- 8008fdc:	214d      	movs	r1, #77	@ 0x4d
+ 8008fdc:	214e      	movs	r1, #78	@ 0x4e
  8008fde:	4806      	ldr	r0, [pc, #24]	@ (8008ff8 <bsp_xspi1_init+0xe4>)
  8008fe0:	f7ff ff3c 	bl	8008e5c <bsp_exception_handler>
     }
@@ -23288,7 +23288,7 @@ static void bsp_xspi2_init(void) // Octal Flash
  8009078:	d004      	beq.n	8009084 <bsp_xspi2_init+0x88>
         BSP_EXCEP_HANDLER();
  800907a:	2200      	movs	r2, #0
- 800907c:	216c      	movs	r1, #108	@ 0x6c
+ 800907c:	216d      	movs	r1, #109	@ 0x6d
  800907e:	480f      	ldr	r0, [pc, #60]	@ (80090bc <bsp_xspi2_init+0xc0>)
  8009080:	f7ff feec 	bl	8008e5c <bsp_exception_handler>
     }
@@ -23309,7 +23309,7 @@ static void bsp_xspi2_init(void) // Octal Flash
  800909e:	d004      	beq.n	80090aa <bsp_xspi2_init+0xae>
         BSP_EXCEP_HANDLER();
  80090a0:	2200      	movs	r2, #0
- 80090a2:	2171      	movs	r1, #113	@ 0x71
+ 80090a2:	2172      	movs	r1, #114	@ 0x72
  80090a4:	4805      	ldr	r0, [pc, #20]	@ (80090bc <bsp_xspi2_init+0xc0>)
  80090a6:	f7ff fed9 	bl	8008e5c <bsp_exception_handler>
     }

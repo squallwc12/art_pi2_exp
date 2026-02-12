@@ -20,6 +20,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 #include "std_cio.h"
+#include "std_heap_stack.h"
+#include "bsp_timer.h"
 
 /* Private typedef -----------------------------------------------------------*/
 typedef struct example_lv1_t {
@@ -54,7 +56,11 @@ static example_lv0_t s_tItem[8] = {
     {.chID = 7},
 };
 
+extern volatile uint32_t g_wTIM1_UP_IRQHandler_StackUsage;
+
 /* Private function prototypes -----------------------------------------------*/
+static void perf_counter_example_r7_exp1(void);
+static void perf_counter_example_r7_exp2(void);
 
 /* Private user code ---------------------------------------------------------*/
 
@@ -130,7 +136,6 @@ void perf_counter_example_r7(void)
 
     __perf_counter_printf__("Performance Counter Example for R7 Start...\r\n");
 
-
     /*! demo of using() block */
     using(int a = 0,printf("========= On Enter =======\r\n"),
                     printf("========= On Leave =======\r\n")) {
@@ -173,13 +178,13 @@ void perf_counter_example_r7(void)
         }
     }
 
-    //! demo of using clock() in timer.h
+    /*! demo of using clock() in timer.h*/
     do {
         int64_t tStart = get_system_ticks();
         __IRQ_SAFE {
             printf("no interrupt \r\n");
         }
-        __perf_counter_printf__("used clock cycle: %"PRIi32, (int32_t)(get_system_ticks() - tStart));
+        __perf_counter_printf__("used clock cycle: %"PRIi32"\r\n", (int32_t)(get_system_ticks() - tStart));
     } while(0);
 
 #if __IS_COMPILER_ARM_COMPILER__
@@ -195,18 +200,89 @@ void perf_counter_example_r7(void)
 
     uintptr_t nStackLimit = (uintptr_t)Image$$ARM_LIB_STACK$$ZI$$Base;
 #else
-    //extern uintptr_t __StackLimit[];
-    //uintptr_t nStackLimit = (uintptr_t)__StackLimit;
+    std_heap_stack_info_t __HeapStackInfo;
+    std_heap_stack_get_info(&__HeapStackInfo);
+    uintptr_t nStackLimit = (uintptr_t)__HeapStackInfo.stack_end;
 #endif
-    /*
-    __perf_counter_printf__("\t\tSystem Stack Remain: %"PRIu32 "\r\n",
-                            perfc_stack_remain((uintptr_t)nStackLimit));
 
+    /*! demo stack usage */
+    perfc_stack_fill(__perfc_port_get_sp(), nStackLimit);
+
+    perf_counter_example_r7_exp2();
+
+    __perf_counter_printf__("System Stack Remain: %"PRIu32"\r\n",
+                            perfc_stack_remain((uintptr_t)nStackLimit));
+    /*
     if (perfc_is_time_out_ms(10000)) {
         __perf_counter_printf__("\r[%010"PRIi64"]\r\n", get_system_ticks());
     }
     */
 
+    //uintptr_t a,b,c,d;
+    __stack_usage__("func: (perf_counter_example_r7_exp1)", nStackLimit,
+        //a = __stack_used__;
+        //b = __nSP219;
+        //c = __nStackLimit219;
+        //d = perfc_stack_remain(__nStackLimit219);
+        __perf_counter_printf__("stack used: %"PRIu32"\r\n", __stack_used__);){
+        perf_counter_example_r7_exp1();
+    }
+
+    __stack_usage__("func: (perf_counter_example_r7_exp2)", nStackLimit){
+        perf_counter_example_r7_exp2();
+    }
+
+    __stack_usage_max__("func: (perf_counter_example_r7_exp1)", nStackLimit){
+		perf_counter_example_r7_exp1();
+	}
+
+    __stack_usage_max__("func: (perf_counter_example_r7_exp2)", nStackLimit){
+		perf_counter_example_r7_exp2();
+	}
+
+    /*! demo cpu usage 50% */
+    uint32_t cpu_i = 100;
+    while(cpu_i--){
+		__cpu_usage__(10) {
+			perfc_delay_us(10000);
+		}
+		perfc_delay_us(10000);
+    }
+
+    /*! demo cpu cycle */
+    __cycleof__("printf") {
+		printf("hello world\r\n");
+	}
+
+    __cycleof__("delay_us(1000)") {
+    	perfc_delay_us(1000);
+    }
+
+    /*！ demo isr */
+    bsp_timer_config_cycle_ms(1, 1000); // Configure TIM1 for 1 second period
+    bsp_timer_start(1);            		// Start TIM1 in interrupt mode
+    perfc_delay_ms(1000);
+    __perf_counter_printf__("irq: (TIM1_UP_IRQHandler) stack usage: %"PRIi32"\r\n", g_wTIM1_UP_IRQHandler_StackUsage);
 
     __perf_counter_printf__("Performance Counter Example for R7 End.\r\n");
+}
+
+static void perf_counter_example_r7_exp1(void)
+{
+    uint8_t a[20] = {0};
+    uint8_t b;
+    for(b = 0; b < 20; b++) {
+		a[b] = b;
+	}
+    return;
+}
+
+static void perf_counter_example_r7_exp2(void)
+{
+    uint32_t i[1024] = {0};
+    uint32_t j;
+    for (j = 0; j < 1024; j++) {
+        i[j] = j;
+    }
+    return;
 }

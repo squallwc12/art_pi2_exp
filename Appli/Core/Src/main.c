@@ -25,6 +25,7 @@
 #include "sbs.h"
 #include "sdmmc.h"
 #include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -35,6 +36,8 @@
 #include "perf_counter.h"
 #include "./example/perf_counter_example_r7.h"
 #include "sd_card.h"
+// bsp includes
+#include "bsp_timer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -122,6 +125,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_SBS_Init();
   MX_SDMMC1_SD_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   std_cio_init();
 
