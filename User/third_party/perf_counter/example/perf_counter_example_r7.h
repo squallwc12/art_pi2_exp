@@ -15,8 +15,10 @@
   ******************************************************************************
   */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __PERF_COUNTER_EXAMPLE_R7_H
-#define __PERF_COUNTER_EXAMPLE_R7_H
+#ifndef __PERFC_COUNTER_EXAMPLE_R7_H
+#define __PERFC_COUNTER_EXAMPLE_R7_H
+
+#ifdef USER_APPLI
 
 #ifdef __cplusplus
 extern "C" {
@@ -41,7 +43,10 @@ void perf_counter_example_r7(void);
 #ifdef __cplusplus
 }
 #endif
-#endif /*__STD_TYPE_H__ */
+
+#endif /* USER_APPLI */
+
+#endif /*__PERF_COUNTER_EXAMPLE_R7_H */
 
 
 

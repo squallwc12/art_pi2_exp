@@ -14,6 +14,7 @@
   *
   ******************************************************************************
   */
+#ifdef USER_APPLI
 /* Includes ------------------------------------------------------------------*/
 #include "perf_counter.h"
 #include "perf_counter_example_r7.h"
@@ -286,3 +287,6 @@ static void perf_counter_example_r7_exp2(void)
     }
     return;
 }
+
+#endif /* USER_APPLI */
+
