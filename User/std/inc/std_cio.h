@@ -123,7 +123,7 @@ extern "C" {
 
 /* Function prototypes ------------------------------------------------------*/
 void std_cio_init(void);
-void std_cio_output(const char* buf, uint32_t len);
+void std_cio_output(const char* buf, int len);
 
 #ifdef __cplusplus
 }

@@ -124,7 +124,7 @@ void std_cio_init(void)
  * @param[in]       len: Buffer length
  * @return          None
  */
-void std_cio_output(const char* buf, uint32_t len)
+void std_cio_output(const char* buf, int len)
 {
   HAL_UART_Transmit(&STD_CIO_UART_HANDLE, (const uint8_t*)buf, len, (len * 10));
 }

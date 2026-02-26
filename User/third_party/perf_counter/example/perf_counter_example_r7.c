@@ -57,7 +57,7 @@ static example_lv0_t s_tItem[8] = {
     {.chID = 7},
 };
 
-extern volatile uint32_t g_wTIM1_UP_IRQHandler_StackUsage;
+extern volatile uint32_t g_wTIM2_IRQHandler_StackUsage;
 
 /* Private function prototypes -----------------------------------------------*/
 static void perf_counter_example_r7_exp1(void);
@@ -260,10 +260,10 @@ void perf_counter_example_r7(void)
     }
 
     /*！ demo isr */
-    bsp_timer_config_cycle_ms(1, 1000); // Configure TIM1 for 1 second period
-    bsp_timer_start(1);            		// Start TIM1 in interrupt mode
+    bsp_timer_config_cycle_ms(2, 1000); // Configure TIM1 for 1 second period
+    bsp_timer_start(2);            		// Start TIM1 in interrupt mode
     perfc_delay_ms(1000);
-    __perf_counter_printf__("irq: (TIM1_UP_IRQHandler) stack usage: %"PRIi32"\r\n", g_wTIM1_UP_IRQHandler_StackUsage);
+    __perf_counter_printf__("irq: (TIM1_UP_IRQHandler) stack usage: %"PRIi32"\r\n", g_wTIM2_IRQHandler_StackUsage);
 
     __perf_counter_printf__("Performance Counter Example for R7 End.\r\n");
 }

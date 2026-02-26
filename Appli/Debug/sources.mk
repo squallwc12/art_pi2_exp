@@ -22,9 +22,12 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+AZURE_RTOS/App \
 Core/Src \
 Core/Startup \
 Drivers/STM32H7RSxx_HAL_Driver \
+Middlewares/ThreadX/RTOS/ThreadX/Core \
+Middlewares/ThreadX/RTOS/ThreadX/PerformanceInfo \
 User/bsp/src \
 User/bsp_components/aps256xx \
 User/bsp_components/w35t51nwtbie \

@@ -16,9 +16,12 @@ RM := rm -rf
 -include User/bsp_components/w35t51nwtbie/subdir.mk
 -include User/bsp_components/aps256xx/subdir.mk
 -include User/bsp/src/subdir.mk
+-include Middlewares/ThreadX/RTOS/ThreadX/PerformanceInfo/subdir.mk
+-include Middlewares/ThreadX/RTOS/ThreadX/Core/subdir.mk
 -include Drivers/STM32H7RSxx_HAL_Driver/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include AZURE_RTOS/App/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -67,8 +70,8 @@ all: main-build
 main-build: art_pi2_exp_Appli.elf secondary-outputs
 
 # Tool invocations
-art_pi2_exp_Appli.elf art_pi2_exp_Appli.map: $(OBJS) $(USER_OBJS) D:\GitHub\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "art_pi2_exp_Appli.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\GitHub\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld" --specs=nosys.specs -Wl,-Map="art_pi2_exp_Appli.map" -Wl,--gc-sections -static  -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+art_pi2_exp_Appli.elf art_pi2_exp_Appli.map: $(OBJS) $(USER_OBJS) D:\Embedded_Software\GitHub\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "art_pi2_exp_Appli.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Embedded_Software\GitHub\art_pi2_exp\Appli\STM32H7R7L8HXH_RAMxspi1_ROMxspi2.ld" --specs=nosys.specs -Wl,-Map="art_pi2_exp_Appli.map" -Wl,--gc-sections -static  -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

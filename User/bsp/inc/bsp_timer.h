@@ -35,8 +35,8 @@ extern "C" {
 /* Exported macro ------------------------------------------------------------*/
 
 /* Exported functions prototypes ---------------------------------------------*/
-void bsp_timer_start_tim1(void);
-void bsp_timer_config_cycle_ms_tim1(uint32_t period_ms);
+void bsp_timer_start_tim2(void);
+void bsp_timer_config_cycle_ms_tim2(uint32_t period_ms);
 
 /* Private defines -----------------------------------------------------------*/
 /*
