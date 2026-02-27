@@ -51,11 +51,10 @@
 									<listOptionValue builtIn="false" value="../../Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../../Drivers/CMSIS/Device/ST/STM32H7RSxx/Include"/>
 									<listOptionValue builtIn="false" value="../../Drivers/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../../User/std/inc"/>
-									<listOptionValue builtIn="false" value="../../User/bsp/inc"/>
 									<listOptionValue builtIn="false" value="../../User/bsp_components/w35t51nwtbie"/>
 									<listOptionValue builtIn="false" value="../../User/bsp_components/aps256xx"/>
-									<listOptionValue builtIn="false" value="../../User/third_party/perf_counter"/>
+									<listOptionValue builtIn="false" value="../../User/bsp/inc"/>
+									<listOptionValue builtIn="false" value="../../User/std/inc"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1036314992" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -82,10 +81,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="applications"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="applications"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

@@ -240,8 +240,6 @@
 "./User/bsp/src/bsp_flash.o"
 "./User/bsp/src/bsp_timer.o"
 "./User/bsp/src/bsp_xspi.o"
-"./User/bsp_components/aps256xx/aps256xx.o"
-"./User/bsp_components/w35t51nwtbie/w35t51nwtbie.o"
 "./User/std/src/std_cio.o"
 "./User/std/src/std_heap_stack.o"
 "./User/std/src/std_time.o"

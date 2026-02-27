@@ -13,8 +13,6 @@ RM := rm -rf
 -include User/third_party/perf_counter/example/subdir.mk
 -include User/third_party/perf_counter/subdir.mk
 -include User/std/src/subdir.mk
--include User/bsp_components/w35t51nwtbie/subdir.mk
--include User/bsp_components/aps256xx/subdir.mk
 -include User/bsp/src/subdir.mk
 -include Middlewares/ThreadX/RTOS/ThreadX/PerformanceInfo/subdir.mk
 -include Middlewares/ThreadX/RTOS/ThreadX/Core/subdir.mk

@@ -29,8 +29,6 @@ Drivers/STM32H7RSxx_HAL_Driver \
 Middlewares/ThreadX/RTOS/ThreadX/Core \
 Middlewares/ThreadX/RTOS/ThreadX/PerformanceInfo \
 User/bsp/src \
-User/bsp_components/aps256xx \
-User/bsp_components/w35t51nwtbie \
 User/std/src \
 User/third_party/perf_counter/example \
 User/third_party/perf_counter \

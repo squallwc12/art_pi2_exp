@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.st.stm32cube.ide.mcu.debug.launch.launchConfigurationType">
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.access_port_id" value="1"/>
-    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.cubeprog_external_loaders" value="[{&quot;fLoaderPath&quot;:&quot;D:\\Embedded_Software\\GitHub\\art_pi2_exp\\download_algorithm\\stldr\\ART-Pi2_ST_winbond_64MB.stldr&quot;,&quot;fInitialize&quot;:false,&quot;fIsEnabled&quot;:true}]"/>
+    <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.cubeprog_external_loaders" value="[{&quot;fLoaderPath&quot;:&quot;${project_loc}/../download_algorithm/stldr/ART-Pi2_ST_winbond_64MB.stldr&quot;,&quot;fInitialize&quot;:false,&quot;fIsEnabled&quot;:true}]"/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.launch.debug_auth__pwd_enable" value="false"/>
     <stringAttribute key="com.st.stm32cube.ide.mcu.debug.launch.debug_auth_certif_path" value=""/>
     <booleanAttribute key="com.st.stm32cube.ide.mcu.debug.launch.debug_auth_check_enable" value="false"/>

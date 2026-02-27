@@ -34,11 +34,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>User</name>
-			<type>2</type>
-			<location>D:/Embedded_Software/GitHub/art_pi2_exp/User</location>
-		</link>
-		<link>
 			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_hal.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal.c</locationURI>
@@ -207,6 +202,111 @@
 			<name>Drivers/STM32H7RSxx_HAL_Driver/stm32h7rsxx_ll_usb.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_ll_usb.c</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/inc/bsp_exception.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/inc/bsp_exception.h</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/inc/bsp_flash.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/inc/bsp_flash.h</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/inc/bsp_timer.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/inc/bsp_timer.h</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/inc/bsp_xspi.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/inc/bsp_xspi.h</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/src/bsp_exception.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/src/bsp_exception.c</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/src/bsp_flash.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/src/bsp_flash.c</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/src/bsp_timer.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/src/bsp_timer.c</locationURI>
+		</link>
+		<link>
+			<name>User/bsp/src/bsp_xspi.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/bsp/src/bsp_xspi.c</locationURI>
+		</link>
+		<link>
+			<name>User/std/inc/std_cio.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/inc/std_cio.h</locationURI>
+		</link>
+		<link>
+			<name>User/std/inc/std_def.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/inc/std_def.h</locationURI>
+		</link>
+		<link>
+			<name>User/std/inc/std_exception.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/inc/std_exception.h</locationURI>
+		</link>
+		<link>
+			<name>User/std/inc/std_heap_stack.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/inc/std_heap_stack.h</locationURI>
+		</link>
+		<link>
+			<name>User/std/inc/std_time.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/inc/std_time.h</locationURI>
+		</link>
+		<link>
+			<name>User/std/src/std_cio.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/src/std_cio.c</locationURI>
+		</link>
+		<link>
+			<name>User/std/src/std_heap_stack.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/src/std_heap_stack.c</locationURI>
+		</link>
+		<link>
+			<name>User/std/src/std_time.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/std/src/std_time.c</locationURI>
+		</link>
+		<link>
+			<name>User/third_party/perf_counter/perf_counter.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/third_party/perf_counter/perf_counter.c</locationURI>
+		</link>
+		<link>
+			<name>User/third_party/perf_counter/perf_counter.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/third_party/perf_counter/perf_counter.h</locationURI>
+		</link>
+		<link>
+			<name>User/third_party/perf_counter/perfc_common.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/third_party/perf_counter/perfc_common.h</locationURI>
+		</link>
+		<link>
+			<name>User/third_party/perf_counter/perfc_port_default.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/third_party/perf_counter/perfc_port_default.c</locationURI>
+		</link>
+		<link>
+			<name>User/third_party/perf_counter/perfc_port_default.h</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/User/third_party/perf_counter/perfc_port_default.h</locationURI>
 		</link>
 		<link>
 			<name>Middlewares/ThreadX/RTOS/ThreadX/Core/tx_block_allocate.c</name>

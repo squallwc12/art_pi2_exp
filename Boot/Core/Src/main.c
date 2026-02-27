@@ -57,7 +57,8 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void clock_information(void);
+void clock_information_boot(void);
+void clock_information_appli(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -109,11 +110,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
   std_cio_init();
 
-  clock_information();
+  clock_information_boot();
 
   bsp_flash_OB_init();
   bsp_xspi_memory_init();
   bsp_xspi_memory_mapped();
+
+  clock_information_appli();
 
   app_boot_jump_to( APPLICATION_ADDRESS );
   /* USER CODE END 2 */
@@ -209,11 +212,11 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 
 /**
-  * @brief  Display clock information
+  * @brief  Display clock information boot
   * @param  None
   * @retval None
   */
-void clock_information(void)
+void clock_information_boot(void)
 {
     printf("System Clock information\r\n");
     printf("SYSCLK_Frequency = %ld\r\n", HAL_RCC_GetSysClockFreq());
@@ -222,6 +225,22 @@ void clock_information(void)
     printf("PCLK2_Frequency  = %ld\r\n", HAL_RCC_GetPCLK2Freq());
     printf("PLL2S_XSPI1_2_Frequency  = %ld\r\n", HAL_RCC_GetPLL2SFreq());
     printf("PLL2T_Frequency  = %ld\r\n", HAL_RCC_GetPLL2TFreq());
+}
+
+/**
+  * @brief  Display clock information application
+  * @param  None
+  * @retval None
+  */
+void clock_information_appli(void)
+{
+	printf("System Clock information\r\n");
+	printf("SYSCLK_Frequency = %ld\r\n", HAL_RCC_GetSysClockFreq());
+	printf("HCLK_Frequency   = %ld\r\n", HAL_RCC_GetHCLKFreq());
+	printf("PCLK1_Frequency  = %ld\r\n", HAL_RCC_GetPCLK1Freq());
+	printf("PCLK2_Frequency  = %ld\r\n", HAL_RCC_GetPCLK2Freq());
+	printf("XSPI1_Frequency  = %ld\r\n", HAL_RCC_GetPLL2SFreq());
+	printf("XSPI2_Frequency  = %ld\r\n", HAL_RCC_GetPLL2SFreq());
 }
 
 /* USER CODE END 4 */

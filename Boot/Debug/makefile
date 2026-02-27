@@ -10,8 +10,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include applications/boot/src/subdir.mk
--include User/third_party/perf_counter/example/subdir.mk
--include User/third_party/perf_counter/subdir.mk
 -include User/std/src/subdir.mk
 -include User/bsp_components/w35t51nwtbie/subdir.mk
 -include User/bsp_components/aps256xx/subdir.mk
