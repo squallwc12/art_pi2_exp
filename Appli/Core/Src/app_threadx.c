@@ -62,7 +62,7 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
   UINT ret = TX_SUCCESS;
   TX_BYTE_POOL *byte_pool = (TX_BYTE_POOL*)memory_ptr;
   /* USER CODE BEGIN App_ThreadX_MEM_POOL */
-  std_printf("App_ThreadX_Init is running.\n");
+  std_printf("App_ThreadX_Init is running.\r\n");
   /* USER CODE END App_ThreadX_MEM_POOL */
   CHAR *pointer;
 
@@ -94,9 +94,14 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
 void tx_app_thread_entry(ULONG thread_input)
 {
   /* USER CODE BEGIN tx_app_thread_entry */
+  (void)thread_input;
+
+  std_printf("tx_app_thread_entry is running.\r\n");
+  
   while(1) {
-	//HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-	tx_thread_sleep(TX_TIMER_TICKS_PER_SECOND);
+	  //HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+	  tx_thread_sleep(TX_TIMER_TICKS_PER_SECOND);
+    std_printf(".\r\n");
   }
   /* USER CODE END tx_app_thread_entry */
 }

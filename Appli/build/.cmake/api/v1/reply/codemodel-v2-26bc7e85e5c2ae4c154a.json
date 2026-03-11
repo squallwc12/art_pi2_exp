@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "art_pi2_exp_Appli",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "STM32_Drivers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-STM32_Drivers-Debug-9bfff0cff41d0bfe6ccc.json",
+					"name" : "STM32_Drivers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ThreadX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ThreadX-Debug-0c75a86c3bd1191be78b.json",
+					"name" : "ThreadX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "art_pi2_exp_Appli::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-art_pi2_exp_Appli-Debug-0daa614e6b02a8bdca49.json",
+					"name" : "art_pi2_exp_Appli",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Embedded_Software/GitHub/art_pi2_exp/Appli/build",
+		"source" : "D:/Embedded_Software/GitHub/art_pi2_exp/Appli"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

@@ -1,5 +1,0 @@
-../Core/Src/main.c:73:5:main	5
-../Core/Src/main.c:139:6:SystemClock_Config	4
-../Core/Src/main.c:219:6:clock_information_boot	1
-../Core/Src/main.c:235:6:clock_information_appli	1
-../Core/Src/main.c:252:6:Error_Handler	1

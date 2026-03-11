@@ -1,0 +1,611 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "art_pi2_exp_Boot.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"include",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"mx-generated.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 90,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 84,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "STM32H7R7xx"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/std/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/bsp/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/applications/boot/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/bsp_components/aps256xx"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/bsp_components/w35t51nwtbie"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/Core/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/STM32H7RSxx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/CMSIS/Device/ST/STM32H7RSxx/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/CMSIS/Include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -x assembler-with-cpp -MMD -MP -g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "STM32H7R7xx"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/std/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/bsp/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/applications/boot/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/bsp_components/aps256xx"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/User/bsp_components/w35t51nwtbie"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/Core/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/STM32H7RSxx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/CMSIS/Device/ST/STM32H7RSxx/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Embedded_Software/GitHub/art_pi2_exp/Boot/../Drivers/CMSIS/Include"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				13
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "STM32_Drivers::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "art_pi2_exp_Boot::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3",
+				"role" : "flags"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "art_pi2_exp_Boot",
+	"nameOnDisk" : "art_pi2_exp_Boot.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				13
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/adc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/dts.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/memorymap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/sbs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/usb_otg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/xspi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/stm32h7rsxx_it.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/stm32h7rsxx_hal_msp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/sysmem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/syscalls.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Startup/startup_stm32h7r7xx.s",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/std/src/std_cio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/std/src/std_heap_stack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/bsp/src/bsp_exception.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/bsp/src/bsp_flash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/bsp/src/bsp_led.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/bsp/src/bsp_xspi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "applications/boot/src/app_boot.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/bsp_components/aps256xx/aps256xx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "User/bsp_components/w35t51nwtbie/w35t51nwtbie.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32h7rsxx.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_adc.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_adc_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_gpio.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_cortex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_exti.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dts.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_uart.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_uart_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pcd.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pcd_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_ll_usb.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/STM32_Drivers.dir/D_/Embedded_Software/GitHub/art_pi2_exp/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_xspi.c.obj",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

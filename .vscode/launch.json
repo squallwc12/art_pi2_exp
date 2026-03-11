@@ -1,0 +1,60 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "stlinkgdbtarget",
+            "request": "launch",
+            "name": "STM32Cube: Auto (Current Context)",
+            "origin": "snippet",
+            "cwd": "${workspaceFolder}",
+            "preBuild": "${command:st-stm32-ide-debug-launch.build}",
+            "deviceName": "STM32H7R7L8H6H",
+            "deviceCore": "Cortex-M7",
+            "runEntry": "main",
+            "imagesAndSymbols": [
+                {
+                    "imageFileName": "${command:st-stm32-ide-debug-launch.get-projects-binary-from-context1}"
+                }
+            ]
+        },
+        {
+            "type": "stlinkgdbtarget",
+            "request": "launch",
+            "name": "STM32Cube: Boot",
+            "origin": "snippet",
+            "cwd": "${workspaceFolder}",
+            "deviceName": "STM32H7R7L8H6H",
+            "deviceCore": "Cortex-M7",
+            "runEntry": "main",
+            "imagesAndSymbols": [
+                {
+                    "imageFileName": "${workspaceFolder}/Boot/build/art_pi2_exp_Boot.elf"
+                }
+            ]
+        },
+        {
+            "type": "stlinkgdbtarget",
+            "request": "launch",
+            "name": "STM32Cube: Appli",
+            "origin": "snippet",
+            "cwd": "${workspaceFolder}",
+            "deviceName": "STM32H7R7L8H6H",
+            "deviceCore": "Cortex-M7",
+            "serverExtLoader": [
+                {
+                    "loader": "${workspaceFolder}/download_algorithm/stldr/ART-Pi2_ST_winbond_64MB.stldr",
+                    "initialize": true
+                }
+            ],
+            "runEntry": "main",
+            "imagesAndSymbols": [
+                {
+                    "imageFileName": "${workspaceFolder}/Appli/build/art_pi2_exp_Appli.elf"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/CMakeFiles/art_pi2_exp_Boot"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/CMakeFiles/art_pi2_exp_Boot.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/CMakeFiles/art_pi2_exp_Boot-complete.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Boot/src/art_pi2_exp_Boot-stamp/art_pi2_exp_Boot-build.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Boot/src/art_pi2_exp_Boot-stamp/art_pi2_exp_Boot-configure.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Boot/src/art_pi2_exp_Boot-stamp/art_pi2_exp_Boot-download.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Boot/src/art_pi2_exp_Boot-stamp/art_pi2_exp_Boot-install.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Boot/src/art_pi2_exp_Boot-stamp/art_pi2_exp_Boot-mkdir.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Boot/src/art_pi2_exp_Boot-stamp/art_pi2_exp_Boot-patch.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Boot/src/art_pi2_exp_Boot-stamp/art_pi2_exp_Boot-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"art_pi2_exp_Boot"
+		],
+		"name" : "art_pi2_exp_Boot"
+	}
+}

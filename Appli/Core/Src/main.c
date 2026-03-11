@@ -19,10 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "app_threadx.h"
 #include "main.h"
-#include "dcmipp.h"
 #include "flash.h"
 #include "i2c.h"
-#include "ltdc.h"
 #include "sbs.h"
 #include "sdmmc.h"
 #include "spi.h"
@@ -39,6 +37,7 @@
 #include "sd_card.h"
 // bsp includes
 #include "bsp_timer.h"
+#include "bsp_led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -113,30 +112,35 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM2_Init();
   MX_UART4_Init();
-  MX_DCMIPP_Init();
+  MX_UART7_Init();
   MX_FLASH_Init();
   MX_I2C1_Init();
   MX_I2C2_Init();
-  MX_LTDC_Init();
   MX_SPI2_Init();
   MX_SPI4_Init();
   MX_SPI5_Init();
-  MX_UART7_Init();
   MX_USART1_UART_Init();
   MX_SBS_Init();
-  MX_SDMMC1_SD_Init();
-  MX_TIM2_Init();
+  //MX_SDMMC1_SD_Init();
   /* USER CODE BEGIN 2 */
+
+  bsp_led_init();
   std_cio_init();
+
+  bsp_led_red_on();
 
   //sd_card_erase_t();
   //sd_card_single_block_t();
 
   std_heap_stack_info();
 
-  perfc_init(true);
-  perf_counter_example_r7();
+  printf("hello world\r\n");
+
+  //perfc_init(false);
+  //perf_counter_example_r7();
+
 
   /* USER CODE END 2 */
 

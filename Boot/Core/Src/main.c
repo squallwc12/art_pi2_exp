@@ -218,13 +218,13 @@ void SystemClock_Config(void)
   */
 void clock_information_boot(void)
 {
-    printf("System Clock information\r\n");
-    printf("SYSCLK_Frequency = %ld\r\n", HAL_RCC_GetSysClockFreq());
-    printf("HCLK_Frequency   = %ld\r\n", HAL_RCC_GetHCLKFreq());
-    printf("PCLK1_Frequency  = %ld\r\n", HAL_RCC_GetPCLK1Freq());
-    printf("PCLK2_Frequency  = %ld\r\n", HAL_RCC_GetPCLK2Freq());
-    printf("PLL2S_XSPI1_2_Frequency  = %ld\r\n", HAL_RCC_GetPLL2SFreq());
-    printf("PLL2T_Frequency  = %ld\r\n", HAL_RCC_GetPLL2TFreq());
+    printf("System Clock information boot\r\n");
+    printf("SYSCLK_Frequency = %" PRIu32 "\r\n", HAL_RCC_GetSysClockFreq());
+    printf("HCLK_Frequency   = %" PRIu32 "\r\n", HAL_RCC_GetHCLKFreq());
+    printf("PCLK1_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPCLK1Freq());
+    printf("PCLK2_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPCLK2Freq());
+    printf("PLL2S_XSPI1_2_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPLL2SFreq());
+    printf("PLL2T_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPLL2TFreq());
 }
 
 /**
@@ -234,13 +234,13 @@ void clock_information_boot(void)
   */
 void clock_information_appli(void)
 {
-	printf("System Clock information\r\n");
-	printf("SYSCLK_Frequency = %ld\r\n", HAL_RCC_GetSysClockFreq());
-	printf("HCLK_Frequency   = %ld\r\n", HAL_RCC_GetHCLKFreq());
-	printf("PCLK1_Frequency  = %ld\r\n", HAL_RCC_GetPCLK1Freq());
-	printf("PCLK2_Frequency  = %ld\r\n", HAL_RCC_GetPCLK2Freq());
-	printf("XSPI1_Frequency  = %ld\r\n", HAL_RCC_GetPLL2SFreq());
-	printf("XSPI2_Frequency  = %ld\r\n", HAL_RCC_GetPLL2SFreq());
+	printf("System Clock information appli\r\n");
+	printf("SYSCLK_Frequency = %" PRIu32 "\r\n", HAL_RCC_GetSysClockFreq());
+	printf("HCLK_Frequency   = %" PRIu32 "\r\n", HAL_RCC_GetHCLKFreq());
+	printf("PCLK1_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPCLK1Freq());
+	printf("PCLK2_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPCLK2Freq());
+	printf("XSPI1_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPLL2SFreq());
+	printf("XSPI2_Frequency  = %" PRIu32 "\r\n", HAL_RCC_GetPLL2SFreq());
 }
 
 /* USER CODE END 4 */

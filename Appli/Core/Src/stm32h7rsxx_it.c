@@ -172,14 +172,14 @@ void TIM1_UP_IRQHandler(void)
   /* USER CODE END TIM1_UP_IRQn 0 */
   HAL_TIM_IRQHandler(&htim1);
   /* USER CODE BEGIN TIM1_UP_IRQn 1 */
-  perfc_port_insert_to_system_timer_insert_ovf_handler();
+
   /* USER CODE END TIM1_UP_IRQn 1 */
 }
 
 /**
   * @brief This function handles TIM2 global interrupt.
   */
-__ISR(TIM2_IRQHandler,1024)
+void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
 

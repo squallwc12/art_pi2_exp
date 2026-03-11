@@ -18,8 +18,6 @@
 #ifndef __PERFC_COUNTER_EXAMPLE_R7_H
 #define __PERFC_COUNTER_EXAMPLE_R7_H
 
-#ifdef USER_APPLI
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -43,8 +41,6 @@ void perf_counter_example_r7(void);
 #ifdef __cplusplus
 }
 #endif
-
-#endif /* USER_APPLI */
 
 #endif /*__PERF_COUNTER_EXAMPLE_R7_H */
 

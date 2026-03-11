@@ -1,0 +1,146 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ExternalProject_Add",
+			"include"
+		],
+		"files" : 
+		[
+			"C:/Users/sisti/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/ExternalProject.cmake",
+			"mx-generated.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2994,
+				"parent" : 3
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "ExternalProjectTargets/art_pi2_exp_Appli"
+	},
+	"id" : "art_pi2_exp_Appli::@6890427a1f51a3e7e1df",
+	"name" : "art_pi2_exp_Appli",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/Debug/CMakeFiles/art_pi2_exp_Appli",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/CMakeFiles/art_pi2_exp_Appli.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/CMakeFiles/art_pi2_exp_Appli-complete.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-build.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-configure.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-download.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-install.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-mkdir.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-patch.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-update.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

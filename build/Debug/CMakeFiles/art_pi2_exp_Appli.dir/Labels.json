@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/CMakeFiles/art_pi2_exp_Appli"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/CMakeFiles/art_pi2_exp_Appli.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/CMakeFiles/art_pi2_exp_Appli-complete.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-build.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-configure.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-download.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-install.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-mkdir.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-patch.rule"
+		},
+		{
+			"file" : "D:/Embedded_Software/GitHub/art_pi2_exp/build/Debug/Appli/src/art_pi2_exp_Appli-stamp/art_pi2_exp_Appli-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"art_pi2_exp_Appli"
+		],
+		"name" : "art_pi2_exp_Appli"
+	}
+}
